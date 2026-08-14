@@ -1311,3 +1311,354 @@ footer {
     }
 
 }
+/* =====================================================
+   MOBILE RESPONSIVE DESIGN
+===================================================== */
+
+@media (max-width: 768px) {
+
+    /* ---------- GENERAL ---------- */
+
+    html {
+        overflow-x: hidden;
+    }
+
+    body {
+        overflow-x: hidden;
+    }
+
+    /* ---------- NAVBAR ---------- */
+
+    .navbar {
+        padding: 16px 20px;
+    }
+
+    .nav-container {
+        padding: 0;
+    }
+
+    .nav-links {
+        gap: 16px;
+    }
+
+    .nav-links a {
+        font-size: 12px;
+    }
+
+
+    /* ---------- HERO ---------- */
+
+    .hero {
+        min-height: auto;
+
+        display: flex;
+        flex-direction: column;
+
+        gap: 45px;
+
+        padding: 70px 24px 60px;
+
+        text-align: left;
+    }
+
+    .hero-left {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .eyebrow {
+        margin-bottom: 18px;
+
+        font-size: 10px;
+
+        letter-spacing: 2px;
+    }
+
+    .hero h1 {
+        margin-bottom: 20px;
+
+        font-size: clamp(42px, 13vw, 62px);
+
+        line-height: 1;
+
+        letter-spacing: -2.5px;
+
+        white-space: nowrap;
+    }
+
+    .hero-role {
+        margin-bottom: 24px;
+
+        font-size: 15px;
+
+        line-height: 1.8;
+    }
+
+    .hero-role b {
+        margin: 0 5px;
+    }
+
+    .hero-summary {
+        max-width: 100%;
+
+        margin-bottom: 28px;
+
+        font-size: 14px;
+
+        line-height: 1.8;
+    }
+
+    .hero-buttons {
+        display: flex;
+
+        flex-wrap: wrap;
+
+        gap: 18px;
+
+        margin-bottom: 10px;
+    }
+
+
+    /* ---------- HERO IMAGE ---------- */
+
+    .home-image,
+    .hero-image {
+        width: 100%;
+
+        display: flex;
+
+        justify-content: center;
+
+        align-items: center;
+    }
+
+    .home-image img,
+    .hero-image img {
+        width: min(280px, 80vw);
+
+        height: min(280px, 80vw);
+
+        object-fit: cover;
+
+        border-radius: 50%;
+    }
+
+
+    /* ---------- SECTIONS ---------- */
+
+    section {
+        padding-left: 24px;
+        padding-right: 24px;
+    }
+
+
+    /* ---------- HEADINGS ---------- */
+
+    h2 {
+        font-size: 32px;
+
+        line-height: 1.15;
+    }
+
+
+    /* ---------- ABOUT ---------- */
+
+    .about-container,
+    .about-content {
+        display: flex;
+
+        flex-direction: column;
+
+        gap: 30px;
+    }
+
+
+    /* ---------- EXPERIENCE ---------- */
+
+    .experience-grid,
+    .experience-container {
+        display: flex;
+
+        flex-direction: column;
+
+        gap: 25px;
+    }
+
+
+    /* ---------- PROJECTS ---------- */
+
+    .projects-grid {
+        grid-template-columns: 1fr;
+
+        gap: 22px;
+    }
+
+    .project-card {
+        width: 100%;
+    }
+
+
+    /* ---------- SKILLS ---------- */
+
+    .skills-grid {
+        grid-template-columns: 1fr;
+
+        gap: 18px;
+    }
+
+
+    /* ---------- EDUCATION ---------- */
+
+    .education-grid,
+    .education-container {
+        display: flex;
+
+        flex-direction: column;
+
+        gap: 22px;
+    }
+
+
+    /* ---------- STATS ---------- */
+
+    .stats,
+    .stats-container {
+        grid-template-columns: repeat(2, 1fr);
+
+        gap: 15px;
+    }
+
+
+    /* ---------- CONTACT ---------- */
+
+    .contact-container {
+        display: flex;
+
+        flex-direction: column;
+
+        gap: 30px;
+    }
+
+    .social-links {
+        flex-wrap: wrap;
+
+        gap: 18px;
+    }
+
+
+    /* ---------- FOOTER ---------- */
+
+    footer {
+        padding: 30px 20px;
+
+        text-align: center;
+
+        font-size: 12px;
+    }
+}
+
+
+/* =====================================================
+   SMALL PHONES
+===================================================== */
+
+@media (max-width: 480px) {
+
+    /* Navbar */
+
+    .navbar {
+        padding: 14px 18px;
+    }
+
+    .nav-links {
+        gap: 10px;
+    }
+
+    .nav-links a {
+        font-size: 10px;
+    }
+
+
+    /* Hero */
+
+    .hero {
+        padding: 55px 20px 50px;
+
+        gap: 35px;
+    }
+
+    .hero h1 {
+        font-size: 42px;
+
+        letter-spacing: -2px;
+
+        white-space: nowrap;
+    }
+
+    .eyebrow {
+        font-size: 9px;
+
+        letter-spacing: 1.8px;
+    }
+
+    .hero-role {
+        font-size: 14px;
+
+        line-height: 1.7;
+    }
+
+    .hero-summary {
+        font-size: 13px;
+
+        line-height: 1.75;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+
+        align-items: flex-start;
+
+        gap: 14px;
+    }
+
+
+    /* Image */
+
+    .home-image img,
+    .hero-image img {
+        width: 230px;
+
+        height: 230px;
+    }
+
+
+    /* Sections */
+
+    section {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    h2 {
+        font-size: 28px;
+    }
+
+
+    /* Stats */
+
+    .stats,
+    .stats-container {
+        grid-template-columns: 1fr 1fr;
+
+        gap: 12px;
+    }
+
+
+    /* Cards */
+
+    .project-card,
+    .experience-card,
+    .skill-card {
+        padding: 20px;
+    }
+}
